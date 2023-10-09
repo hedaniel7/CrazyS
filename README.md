@@ -1,5 +1,15 @@
 # Understanding the CrazyS repository for controller implementation
 ## Control
+
+###Control overview
+
+![controller_overview](https://github.com/hedaniel7/CrazyS/assets/23526716/5fa1ed39-e829-4632-ae3a-520e96cc32a7)
+
+
+![cascaded_pid_controller](https://github.com/hedaniel7/CrazyS/assets/23526716/674817c5-b7e7-43eb-9e71-c1dae35684e2)
+
+
+###Relevant files
 ```
 ~/catkin_ws/src/CrazyS/rotors_control/src
 ├── attitude_controller.cpp

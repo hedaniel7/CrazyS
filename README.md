@@ -9,7 +9,7 @@
 ![cascaded_pid_controller](https://github.com/hedaniel7/CrazyS/assets/23526716/674817c5-b7e7-43eb-9e71-c1dae35684e2)
 
 
-### Relevant files
+### Relevant files in rotors_control
 ```
 ~/catkin_ws/src/CrazyS/rotors_control/src
 ├── attitude_controller.cpp
@@ -38,7 +38,7 @@
 └── rate_controller.cpp
 ```
 
-## Gazebo usage of Control
+## Gazebo usage of Control (the main start point)
 ```
 ~/catkin_ws/src/CrazyS/rotors_gazebo/src
 ├── library
@@ -48,13 +48,23 @@
 ```
 
 
+
 ```
 ~/catkin_ws/src/CrazyS/rotors_gazebo/launch
 ├── crazyflie2_hovering_example.launch
-├── crazyflie2_internal_model_controller.launch
-├── crazyflie2_internal_model_controller_vi_sensor.launch
 ...
 ```
+
+`crazyflie2_hovering_example.launch` makes an instance of `position_controller_node.cpp` and uses it.
+`position_controller_node.cpp` uses: 
+```
+rotors_control/parameters_ros.h
+rotors_control/stabilizer_types.h
+rotors_control/crazyflie_complementary_filter.h
+```
+
+`crazyflie2_hovering_example.launch` also makes an instance of `hovering_example.cpp` and uses it.
+
 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)

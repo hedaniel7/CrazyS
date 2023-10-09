@@ -1,3 +1,34 @@
+# Understanding the CrazyS repository
+## Control
+```
+~/catkin_ws/src/CrazyS/rotors_control/src
+├── attitude_controller.cpp
+├── attitude_controller_samy.cpp
+├── library
+│   ├── crazyflie_complementary_filter.cpp
+│   ├── crazyflie_onboard_controller.cpp
+│   ├── internal_model_controller.cpp
+│   ├── lee_position_controller.cpp
+│   ├── mellinger_controller.cpp
+│   ├── pid_controller.cpp
+│   ├── position_controller.cpp
+│   ├── roll_pitch_yawrate_thrust_controller.cpp
+│   ├── roll_pitch_yawrate_thrust_crazyflie.cpp
+│   └── sensfusion6.cpp
+├── motor_controller.cpp
+├── nodes
+│   ├── lee_position_controller_node.cpp
+│   ├── lee_position_controller_node.h
+│   ├── position_controller_node.cpp
+│   ├── position_controller_node.h
+│   ├── roll_pitch_yawrate_thrust_controller_node.cpp
+│   ├── roll_pitch_yawrate_thrust_controller_node.h
+│   ├── roll_pitch_yawrate_thrust_crazyflie_node.cpp
+│   └── roll_pitch_yawrate_thrust_crazyflie_node.h
+└── rate_controller.cpp
+```
+
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)

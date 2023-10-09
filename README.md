@@ -1,7 +1,7 @@
 # Understanding the CrazyS repository for controller implementation
 ## Control
 
-###Control overview
+### Control overview
 
 ![controller_overview](https://github.com/hedaniel7/CrazyS/assets/23526716/5fa1ed39-e829-4632-ae3a-520e96cc32a7)
 
@@ -9,7 +9,7 @@
 ![cascaded_pid_controller](https://github.com/hedaniel7/CrazyS/assets/23526716/674817c5-b7e7-43eb-9e71-c1dae35684e2)
 
 
-###Relevant files
+### Relevant files
 ```
 ~/catkin_ws/src/CrazyS/rotors_control/src
 ├── attitude_controller.cpp
@@ -39,35 +39,21 @@
 ```
 
 ## Gazebo usage of Control
+```
+~/catkin_ws/src/CrazyS/rotors_gazebo/src
+├── library
+│   ├── pid_controller.cpp
+└── nodes
+    ├── hovering_example.cpp
+```
+
 
 ```
-dan@SurfBoard3:~/catkin_ws/src/CrazyS/rotors_gazebo/launch
+~/catkin_ws/src/CrazyS/rotors_gazebo/launch
 ├── crazyflie2_hovering_example.launch
 ├── crazyflie2_internal_model_controller.launch
 ├── crazyflie2_internal_model_controller_vi_sensor.launch
-├── crazyflie2_mellinger_controller.launch
-├── crazyflie2_octomap.launch
-├── crazyflie2_swarm_hovering_example.launch
-├── crazyflie2_with_joy.launch
-├── crazyflie2_without_controller.launch
-├── firefly_swarm_hovering_example.launch
-├── fixed_wing_hil.launch
-├── fixed_wing.launch
-├── fixed_wing_with_joy.launch
-├── mav_hovering_example.launch
-├── mav_hovering_example_with_vi_sensor.launch
-├── mav.launch
-├── mav_powerplant_with_waypoint_publisher.launch
-├── mav_with_joy.launch
-├── mav_with_keyboard.launch
-├── mav_with_waypoint_publisher.launch
-├── mav_with_wind_gust.launch
-├── spawn_fixed_wing.launch
-├── spawn_mav_crazyflie.launch
-├── spawn_mav.launch
-├── spawn_vi_sensor.launch
-├── three_multicopters_hovering_example.launch
-└── vi_sensor.launch
+...
 ```
 
 
